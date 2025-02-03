@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Gym</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            text-align: center; 
+            padding: 20px;
+            min-height: 100vh;
+            background-color: #171515;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #171515;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav ul li a.active {
+            color: #ff914d;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: #ff914d;
+        }
+
+        .content {
+            padding: 250px 20px 20px 20px;
+            flex-grow: 1;
+        }
+
+        /* Keyframes untuk animasi baru */
+        @keyframes fadeZoom {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4.5em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
+            /* Properti animasi */
+            animation: fadeZoom 1.8s ease-in-out;
+        }
+
+        .package-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+        }
+
+        .package {
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .package img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .package img:hover {
+            transform: scale(1.1);
+        }
+
+        .package-info {
+            display: none;
+            text-align: left;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .package-info.active {
+            display: block;
+        }
+
+        .package h3 {
+            font-size: 2em;
+            color: #ff914d;
+            margin-top: 20px;
+        }
+
+        .package p {
+            font-size: 1.2em;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="lg4.jpg" alt="World Gym Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Package.html" class="active">Package</a></li>
+                <li><a href="Equipment.html">Equipment</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Our Fitness Packages</h1>
+
+        <div class="package-section">
+            <div class="package" onclick="togglePackageInfo('packageA')">
+                <img src="pA.jpg" alt="Package A">
+                <h3>Package A</h3>
+            </div>
+
+            <div class="package" onclick="togglePackageInfo('packageB')">
+                <img src="pB.jpg" alt="Package B">
+                <h3>Package B</h3>
+            </div>
+
+            <div class="package" onclick="togglePackageInfo('packageC')">
+                <img src="pC.jpg" alt="Package C">
+                <h3>Package C</h3>
+            </div>
+
+            <div class="package" onclick="togglePackageInfo('packageD')">
+                <img src="pD.jpg" alt="Package D">
+                <h3>Package D</h3>
+            </div>
+        </div>
+
+        <div id="packageA" class="package-info">
+            <h3>Package A RM 30</h3>
+            <p>Package A includes price walk in/per person<br> 
+               90 minute sessions<br>
+               Full body workout<br>
+               Focus on burning fat
+            </p>
+        </div>
+
+        <div id="packageB" class="package-info">
+            <h3>Package B RM 300</h3>
+            <p>Package B includes 10 sessions<br> 
+                90 minute sessions<br>
+                Focus on build muscles<br>
+                Focus on burning fat<br>
+            </p>    
+        </div>
+
+        <div id="packageC" class="package-info">
+            <h3>Package C RM 600</h3>
+            <p>Package C includes 22 sessions<br> 
+                90 minute sessions<br>
+                Focus on build muscles<br>
+                Focus on burning fat<br>
+                Diet plan
+            </p> 
+        </div>
+
+        <div id="packageD" class="package-info">
+            <h3>Package D RM 1000</h3>
+            <p>Package D offers 30 sessions<br>
+               90 minute sessions<br>
+               Focus on build muscles<br>
+               Focus on burning fat<br>
+               Diet plan<br>
+               Cardio exercise 
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePackageInfo(packageId) {
+            // Hide all package info
+            const allPackageInfo = document.querySelectorAll('.package-info');
+            allPackageInfo.forEach(info => info.classList.remove('active'));
+
+            // Show the selected package info
+            const selectedPackage = document.getElementById(packageId);
+            selectedPackage.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Infinity Gym</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            text-align: center; 
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('bc2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #171515;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav ul li a.active {
+            color: #ff914d;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: #ff914d;
+        }
+
+        .content {
+            padding: 200px 20px 20px 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4.5em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #fff;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .social-media {
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-media img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        .map {
+            margin-top: 40px;
+            height: 500px;
+            width: 100%;
+        }
+
+        /* Map style */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="lg4.jpg" alt="World Gym Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Package.html">Package</a></li>
+                <li><a href="Equipment.html">Equipment</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out to us through any of the following channels:</p>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <a href="https://wa.me/+60134554620" target="_blank">
+                <img src="ws.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.tiktok.com/@waninfinitygymkelate?_t=ZS-8t67CYE00G7&_r=1" target="_blank">
+                <img src="tt.webp" alt="TikTok">
+            </a>
+            <a href="https://www.facebook.com/share/185xALEJW9/?mibextid=wwXIfr" target="_blank">
+                <img src="fb4.webp" alt="Facebook">
+            </a>
+        </div>
+
+        <!-- Location Map -->
+        <div class="map">
+            <h3>Visit Us</h3>
+            <p>PT 703, Jalan Humaira 2, Kompleks Perniagaan Humaira, Tanah Merah, Malaysia</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19615.29776405162!2d102.22653780980378!3d5.8764234494681185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b9a8338ea2bc9d%3A0x4f1b6fe01c548396!2sKompleks%20Perniagaan%20Humaira!5e0!3m2!1sen!2smy!4v1673756714711!5m2!1sen!2smy" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>

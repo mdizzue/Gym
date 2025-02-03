@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Gym</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            text-align: center; 
+            padding: 20px;
+            min-height: 100vh;
+            background-image: url('hall.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #171515;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            z-index: 10;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        nav ul li a.active {
+            color: #ff914d;
+            text-decoration: underline;
+        }
+
+        nav ul li a:hover {
+            color: #ff914d;
+        }
+
+        .content {
+            padding: 250px 20px 20px 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4.5em;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            animation: fadeInSlide 2s ease-out;
+        }
+
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            60% {
+                opacity: 1;
+                transform: translateX(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #fff;
+            animation: fadeIn 3s ease-out;
+        }
+
+        .image-text-section h2 {
+            font-size: 2.9em;
+            color: #ff914d;
+            margin-bottom: 20px;
+            text-shadow: 
+                0 0 10px rgba(0, 0, 0, 0.5), 
+                0 0 20px rgba(0, 0, 0, 0.3), 
+                0 0 30px rgba(0, 0, 0, 0.2); 
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .image-text-section p {
+            font-size: 1.5em;
+            color: #fff;
+            text-align: center; 
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            60% {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Justify text */
+        .additional-content p {
+            font-size: 1.2em;
+            color: #fff;
+            text-align: justify; /* Justify the text */
+        }
+
+        .additional-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 60px 20px;
+            background-color: #000;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .additional-content .left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .additional-content .right {
+            flex: 1;
+        }
+
+        .additional-content h3 {
+            font-size: 2.5em;
+            color: #ff914d;
+            margin-bottom: 20px;
+        }
+
+        .additional-content img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="lg4.jpg" alt="World Gym Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Package.html">Package</a></li>
+                <li><a href="Equipment.html">Equipment</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>IFINITY GYM & FIT MODELLING</h1>
+    </div>
+
+    <div class="image-text-section">
+        <h2>Get Fit and Strong</h2>
+        <p>Join us today and transform your fitness journey with top-of-the-line equipment and expert trainers.</p>
+    </div>
+
+    <!-- Additional content section with justified text -->
+    <div class="additional-content">
+        <div class="left">
+            <h3>Achieve Your Fitness Goals</h3>
+            <p>Infinity Gym & Fit Modeling is an attractive gym with a black and orange theme that provides an energetic and modern atmosphere. Located in Tanah Merah, this gym is the choice of many because it offers a wide variety of advanced equipment and fitness activities suitable for all groups, regardless of age or background.
+
+            Infinity Gym provides a variety of facilities including equipment for strength training, cardio, and space for group training sessions such as boxing, zumba, and more. Its uniqueness lies in its friendly and welcoming atmosphere, with customers coming from various nationalities and ages. This makes the gym more than just a place to work out, but also a community that supports and encourages each other to reach their fitness goals.</p>
+        </div>
+        <div class="right">
+            <img src="oren.jpg" alt="Gym Equipment">
+        </div>
+    </div>
+
+</body>
+</html>
